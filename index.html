@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/symbol.css">
+    <link rel="stylesheet" href="./css/buttonrev.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.jpg" />
+    <script src="slider.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <title>GrabMe</title>
+  </head>
+
+   <!-- MAIN HEADER -->
+   <nav class="header">
+    <div class="logo">
+           <a href="index.html" class="main_header_logo1">GrabMe</a>
+           <a href="grab.html" class="main_header_logo2">.com</a>
+    </div>
+    <!-- <div class="search_box"></div> -->
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+    </label> 
+    <ul>
+       <li><a class="active" href="#">Home</a></li>
+       <li><a href="./Categories/index.html">Categories</a></li>
+       <li><a href="about.html">About Us</a></li>
+       <li><a href="./Loginpage/index.html">Log in</a></li>
+    </ul>
+ </nav>
+
+
+   <!-- SLIDER -->
+   <div class="slider">
+    <body>
+       <section>
+               <div id="containerSlider">
+                   <div id="slidingImage"> <img src="assets/img1.png" alt="image1"> </div>
+                   <div id="slidingImage"> <img src="assets/img2.png" alt="image2"> </div>
+                   <div id="slidingImage"> <img src="assets/img3.png" alt="image3"> </div>
+                   <div id="slidingImage"> <img src="assets/img4.png" alt="image4"> </div>
+               </div>
+       </section>
+   </body>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+   <script>
+       $(document).ready(function()
+       {
+       $('#containerSlider').slick({
+           dots: true,
+           infinite: true,
+           slidesToShow: 1,
+           slidesToScroll: 1,
+           autoplay: true,
+           autoplaySpeed: 2000,
+           });
+       });
+   </script>
+ </div>
+
+    <!-- logo symbols -->
+    <hr>
+    <div class="logo-container">
+       <div class="logo-row">
+          <div class="logo-card">
+             <a href=""><img  class="logo-img logo-img1 " src="./assets/Ajio-coupon-codes.jpg" alt="Ajio"></a>
+             <a href=""><img  class="logo-img " src="./assets/makemytrip-deal-codes.png" alt="Ajio"></a>
+             <a href=""><img  class="logo-img" src="./assets/amazon-promo-codes.png" alt="Ajio"></a>
+             <a href=""><img  class="logo-img img6" src="./assets/Jackjones-coupon-codes-.jpg" alt="Ajio"></a>
+             <a href=""><img  class="logo-img" src="./assets/clovia-coupon-codes.png" alt="Ajio"></a>
+             <a href=""><img  class="logo-img img6" src="./assets/mothercare-coupon-codes.png" alt="Ajio"></a>
+             <a href=""><img  class="logo-img" src="./assets/oneplus-coupon-codes.jpg" alt="Ajio"></a>
+             <a href=""><i class="arrow right"></i></a>
+          </div>
+       </div>
+    </div>
+
+
+  <!-- Product section. -->
+  <!-- Top deals section starts -->
+  <div class="bg-clr">
+  <section class="product">
+    <h2 class="product-category" id="Trending"><u class="uldr">Popular</u> Offers of the Day</h2>
+  </section>
+
+  <button class="pre-btn"><img src="assets/arrow.png" alt="" /></button>
+  <button class="nxt-btn"><img src="assets/arrow.png" alt="" /></button>
+
+  <div class="product-container">
+    <div class="card">
+      <div class="badge">
+        <img class="ribbon" src="./assets/ribbon.svg" alt="" />
+      </div>
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/3.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="badge">
+        <img class="ribbon" src="./assets/ribbon.svg" alt="" />
+      </div>
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Licious.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Now Get Upto 30% Off On Chicken, Fishes & More.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="badge">
+        <img class="ribbon" src="./assets/ribbon.svg" alt="" />
+      </div>
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Dominos.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat 30% Off On Pizza Order Of Rs.200 & Above.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="badge">
+        <img class="ribbon" src="./assets/ribbon.svg" alt="" />
+      </div>
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Bookmyshow.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.200 OFF Cashback on orders above 
+              Rs.1000.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="badge">
+        <img class="ribbon" src="./assets/ribbon.svg" alt="" />
+      </div>
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Dominos4.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.899.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="badge">
+        <img class="ribbon" src="./assets/ribbon.svg" alt="" />
+      </div>
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Groceries.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Upto 60% Off On Grocery & Personal Care Products + Free Delivery
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="badge">
+        <img class="ribbon" src="./assets/ribbon.svg" alt="" />
+      </div>
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Paytm_Movie.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.50 Cashback on orders above 
+              Rs.150.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Top Store -->
+<div class="top-store">
+<div class="tp_row">
+  <div class="tp_col">
+      <h1>Popular Stores</h1>
+      <p class="head_line">Find Best Coupons From 750+ Online Shopping <br> Destination At GrabMe.com.</p>
+      <button class="tp-btn" type="button">Explore</button>
+  </div>
+  <div class="tp_col">
+      <div class="tp_card tp_card1">
+          <h5></h5>
+          <p></p>
+      </div>
+      <div class="tp_card tp_card2">
+          <h5></h5>
+          <p></p>
+      </div>
+      <div class="tp_card tp_card3">
+          <h5></h5>
+          <p></p>
+      </div>
+      <div class="tp_card tp_card4">
+          <h5></h5>
+          <p></p>
+      </div>
+      <div class="tp_card tp_card5">
+          <h5></h5>
+          <p></p>
+      </div>
+      <div class="tp_card tp_card6">
+          <h5></h5>
+          <p></p>
+      </div>
+  </div>
+</div>
+</div>
+
+<!-- categories -->
+
+<div class="bgclr">
+  <section class="product">
+    <h2 class="product-category" id="Trending"><u class="uldr">Top</u> Coupons & Deals</h2>
+  </section>
+
+  <button class="pre-btn"><img src="assets/arrow.png" alt="" /></button>
+  <button class="nxt-btn"><img src="assets/arrow.png" alt="" /></button>
+
+  <div class="product-container">
+    <div class="card card1">
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/biryani.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Frraazo.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/7.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Dominos_50.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/8.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/5.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/2.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- categories2 -->
+<div class="bg-clr">
+  <section class="product">
+    <h2 class="product-category" id="Trending"> <u class="uldr"> Offers</u> that you cann't resist</h2>
+  </section>
+
+  <button class="pre-btn"><img src="assets/arrow.png" alt="" /></button>
+  <button class="nxt-btn"><img src="assets/arrow.png" alt="" /></button>
+
+  <div class="product-container">
+    <div class="card card1">
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Mc.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Pharmasy.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/dominoz2.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Paytm_Movie.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Xstream.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/8.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/The_dreama.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- categories3 -->
+<div class="bgclr">
+  <section class="product">
+    <h2 class="product-category" id="Trending"><u class="uldr">Grab</u>  all this!!</h2>
+  </section>
+
+  <button class="pre-btn"><img src="assets/arrow.png" alt="" /></button>
+  <button class="nxt-btn"><img src="assets/arrow.png" alt="" /></button>
+
+  <div class="product-container">
+    <div class="card card1">
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Nic_honestly.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Wow.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/5.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Dominos4.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Wow.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Xstream.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/mamearth.jpg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- categories4 -->
+<div class="bg-clr">
+  <section class="product">
+    <h2 class="product-category" id="Trending"><u class="uldr">Trending</u> Now</h2>
+  </section>
+
+  <button class="pre-btn"><img src="assets/arrow.png" alt="" /></button>
+  <button class="nxt-btn"><img src="assets/arrow.png" alt="" /></button>
+
+  <div class="product-container">
+    <div class="card card1">
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/7.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Paytm_Movie.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/3.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/mamearth.jpg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Bookmyshow.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Frraazo.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      
+        <div class="card-header">
+            <img class="img-responsive" src="assets/Coupons/Wow.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <p>
+              Flat Rs.500 Cashback on orders above 
+              Rs.999.
+            </p>
+        </div>
+        <div class="col-sm-4 action-block">
+          <div class="button" onclick="removeTittle()">
+              <a href="#" id="button-hide-two" class="button-code">Discount 100</a>
+              <a href="/CopyCode/index.html" id="button-overlay-two" class="button-overlay">
+                  <div class="button-tittle" onclick="removeTittle()">Grab Deal</div>
+                  <img src="Get Image" alt="">
+              </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="end_tittle">
+  <h1>Simply Copy, Redeem And Save</h1>
+</div>
+
+
+      <!-- Footer section starts -->
+      <footer>
+        <div class="footer-content">
+          <div class="social">
+            <h3>GrabMe.com</h3>
+            <div class="s_icon">
+            <a href="https://github.com"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="copyright">
+            <p class="m-w-l">Made with 🤍 by GrabMe.com</p>
+              Copyright &copy; GrabMe.com @2021 . All rights reserved
+            </p>
+          </div>
+          <div class="footer-ul-container">
+            <ul class="category">
+              <li class="category-title">Best Deals on</li>
+              <li><a href="#" class="footer-link">t-shirts</a></li>
+              <li><a href="#" class="footer-link">sweatshirts</a></li>
+              <li><a href="#" class="footer-link">shirts</a></li>
+              <li><a href="#" class="footer-link">jeans</a></li>
+              <li><a href="#" class="footer-link">trousers</a></li>
+              <li><a href="#" class="footer-link">shoes</a></li>
+              <li><a href="#" class="footer-link">casuals</a></li>
+              <li><a href="#" class="footer-link">formals</a></li>
+              <li><a href="#" class="footer-link">sports</a></li>
+              <li><a href="#" class="footer-link">watch</a></li>
+            </ul>
+            <ul class="category">
+              <li class="category-title">Grab This</li>
+              <li><a href="#" class="footer-link">t-shirts</a></li>
+              <li><a href="#" class="footer-link">sweatshirts</a></li>
+              <li><a href="#" class="footer-link">shirts</a></li>
+              <li><a href="#" class="footer-link">jeans</a></li>
+              <li><a href="#" class="footer-link">trousers</a></li>
+              <li><a href="#" class="footer-link">shoes</a></li>
+              <li><a href="#" class="footer-link">casuals</a></li>
+              <li><a href="#" class="footer-link">formals</a></li>
+              <li><a href="#" class="footer-link">sports</a></li>
+              <li><a href="#" class="footer-link">watch</a></li>
+            </ul>
+          </div>
+        </div>
+    
+      </footer>
+      <!-- Footer section ends -->
+  <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+  <script src="./script.js"></script>
+</html>
